@@ -1,0 +1,9 @@
+/* footer */
+.socials{
+    height: 100;
+    width: 90;
+}
+.socials__list{
+    top: 10px;
+    left: 100px;
+}

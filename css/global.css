@@ -1,0 +1,52 @@
+*{
+    color:  #722F37 ;
+    background-color:  #ffffff ;
+}
+::selection {
+    background-color: #722F37;
+    color: white; /* Background color of selected text */
+  }
+input[type="checkbox"] {
+    border-color:  #80461B ;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked{
+    accent-color: #722F37;
+}
+summary{
+    cursor: pointer;
+}
+input[type="text"] {
+    display: block;
+    border-color:  #80461B ;
+    border-radius: 8px;
+    height: 40px;
+    width: 272px;
+
+}
+input[type="text"]::placeholder{
+    font-size: 12px;
+}
+input[type="text"]:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px  #A52A2A ; 
+
+}
+button{
+    border-radius: 8px;
+    border-color:   #C4A484  #80461B #80461B  #C4A484  ;
+    border-width: 1px;
+    color: white;
+    background-color: #80461B;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    background-color: #945424;
+}
+button:active{
+    background-color: white;
+    color: #80461B;
+    border-width: 2px;
+}
+

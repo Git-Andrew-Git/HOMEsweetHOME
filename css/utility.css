@@ -1,0 +1,77 @@
+/* utility */
+.add--pntr{
+    cursor: pointer;
+}
+.add--bg-br{
+    background-color: #80461B;
+}
+.add--bg-ch{
+    background-color:  #7B3F00 ;
+}
+.add--bg-tr{
+    background-color: transparent;
+}
+.add--bg-br-l{
+    background-color: #945424;
+}
+.add--bg-w{
+    background-color: white;
+}
+.add--bd-c-br{
+    border-color:  #80461B ;
+}
+.add--bd-r-8{
+    border-radius: 8px;
+}
+.add--text-justify { text-align: justify; }
+.add--flex{
+    display: flex;
+}
+.add--block{
+    display: block;
+}
+.add--i-block{
+    display: inline-block;
+}
+.add--pa{
+    position: absolute;
+}
+.add--pr{
+    position: relative;
+}
+.add--txt-s-8{
+    font-size: 0.5rem;
+}
+.add--txt-s-10{
+    font-size: 0.625rem;
+}
+.add--txt-s-12{
+    font-size: 0.75rem;
+}
+.add--txt-s-14{
+    font-size: 0.875rem;
+}
+.add--txt-s-16{
+    font-size: 1rem;
+}
+.add--underline{
+    text-decoration: underline;
+}
+.add--uppercase{
+    text-transform: uppercase;
+}
+.add--txt-no-style{
+    text-transform: none;
+}
+.add--font-normal{
+    font-weight: 400;
+}
+.add--font-bold{
+    font-weight: 700;
+}
+.add--mx-20{
+    margin-left: 20; margin-right: 20;
+}
+.add--my-20{
+    margin-top: 20; margin-bottom: 20;
+}
