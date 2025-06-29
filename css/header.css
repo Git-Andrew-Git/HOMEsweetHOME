@@ -1,182 +1,240 @@
 /* header */
 
-.menu{
+.menu {
+  display: none;
+  position: fixed;
+  top: 38px;
+  right: 15px;
+  width: 200px;
+  background-color: transparent;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.menu:target {
+  display: flex;
+}
+.menu__list {
+box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  height: 220px;
+  list-style-type: none;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+.menu__list:hover{
+    box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.4);
+}
+.menu__item {
+  padding: 8px;
+}
+.menu__item > a {
+  text-decoration: none;
+}
+
+.navbar {
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  background-color: #c4a484;
+  height: 50px;
+}
+
+.navbar > :first-child {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  height: 45px;
+  width: 45px;
+  background-color: #80461b;
+}
+
+.navbar > :last-child {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  height: 23px;
+  width: 23px;
+  background-color: #80461b;
+}
+.logo {
+  height: 45px;
+  width: 45px;
+  background-color: #80461b;
+}
+.logo > svg {
+  background-color: #c4a484;
+  cursor: pointer;
+}
+
+.hamburger {
+  height: 23px;
+  width: 23px;
+  background-color: #c4a484;
+}
+.hamburger > a > svg {
+  background-color: #c4a484;
+  cursor: pointer;
+}
+/* .hero{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
+.hero__recherecher {
+  position: relative;
+  height: 500px;
+  width: 100%;
+}
+.rechercher__wrapper{
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Centers inline content like text & images */
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+}
+.rechercher__wrapper > * {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.hero__img{
+    height: 250px;
+    width: 100vw;
+}
+.hero__img>img{
+    width: 100vw;
+}
+.recherecher__localisation {
+    /* left: 45%; */
+    /* height: 50px; */
+  /* top: 50px; */
+  left: 64px;
+}
+
+.recherecher__localisation > label {
+  position: absolute;
+  left: 3px;
+  cursor: pointer;
+}
+
+.recherecher__localisation > input {
+  position: absolute;
+  top: 28px;
+}
+
+.recherecher__biens {
+  top: 100px;
+  /* left: 24px; */
+}
+
+.biens__items > label {
+  position: relative;
+  left: 14px;
+  top: 15px;
+}
+
+.biens__items input {
+  position: relative;
+  left: -4px;
+}
+
+.biens__items > label:last-child {
+  left: 30px;
+}
+
+.recherecher__pieces {
+  top: 175px;
+  /* left: 24px; */
+}
+
+.pieces__items > label {
+  position: relative;
+  left: 14px;
+  top: 15px;
+}
+
+.pieces__items input {
+  position: relative;
+  left: -4px;
+}
+
+.pieces__items > label:last-child {
+  left: 55px;
+}
+
+.pieces__items > :nth-child(2) {
+  left: 28px;
+}
+
+.pieces__items > :nth-child(3) {
+  left: 43px;
+}
+
+.recherecher__chambres {
+  top: 250px;
+  /* left: 24px; */
+}
+
+.chambres__items > label {
+  position: relative;
+  left: 14px;
+  top: 15px;
+}
+
+.chambres__items input {
+  position: relative;
+  left: -4px;
+}
+
+.chambres__items > label:last-child {
+  left: 55px;
+}
+
+.chambres__items > :nth-child(2) {
+  left: 28px;
+}
+
+.chambres__items > :nth-child(3) {
+  left: 43px;
+}
+
+.recherecher__prix {
+  top: 325px;
+  left: 133px;
+}
+
+.recherecher__prix > input {
+  position: absolute;
+  top: 28px;
+}
+
+.recherecher__prix > label {
+  position: relative;
+  left: 3px;
+  cursor: pointer;
+}
+
+.recherecher__button {
+  top: 435px;
+}
+.recherecher__button > button {
+  height: 45px;
+  width: 278px;
+}
+
+.sinscrire{
     display: none;
 }
-.menu__list{
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.navbar{
-    position: relative;
-    background-color: #C4A484;
-    height: 50px;
-    
-}
-
-
-
-.navbar>:first-child{
-    position: absolute;
-    left: 3px;
-    top: 3px;
-    height: 45px;
-    width: 45px;
-    background-color: #80461B;
-}
-
-.navbar>:last-child{
-    position: absolute;
-    top: 13px;
-    left: 284px;
-    height: 23px;
-    width: 23px;
-    background-color: #80461B;
-}
-.logo{
-    
-    height: 45px;
-    width: 45px;
-    background-color: #80461B;
-}
-.logo>svg{
-    background-color: #C4A484;
-    cursor: pointer;
-}
-
-.hamburger{
-    height: 23px;
-    width: 23px;
-    background-color: #C4A484;
-}
-.hamburger>svg{
-    background-color: #C4A484;
-    cursor: pointer;
-}
-
-.header__recherecher{
-    position: relative;
-    height: 500px;
-}
-
-.header__recherecher>*{
-    position: absolute;
-    left: 20px;
-}
-
-.recherecher__localisation{
-    top: 10px;
-}
-
-.recherecher__localisation>label{
-    position: absolute;
-    left: 3px;
-    cursor: pointer;
-}
-
-.recherecher__localisation>input{
-    position: absolute;
-    top: 28px;
-}
-
-.recherecher__biens{
-    top: 100px;
-    left: 24px;
-}
-
-.biens__items>label{
-    position: relative;
-    left: 14px;
-    top: 15px;
-}
-
-.biens__items input{
-    position: relative;
-    left: -4px;
-}
-
-.biens__items>label:last-child{
-    left: 30px;
-}
-
-.recherecher__pieces{
-    top: 175px;
-    left: 24px;
-}
-
-
-.pieces__items>label{
-    position: relative;
-    left: 14px;
-    top: 15px;
-}
-
-.pieces__items input{
-    position: relative;
-    left: -4px;
-}
-
-.pieces__items>label:last-child{
-    left: 55px;
-}
-
-.pieces__items > :nth-child(2){
-    left: 28px;
-}
-
-.pieces__items > :nth-child(3){
-    left: 43px;
-}
-
-.recherecher__chambres{
-    top: 250px;
-    left: 24px;
-}
-
-.chambres__items>label{
-    position: relative;
-    left: 14px;
-    top: 15px;
-}
-
-.chambres__items input{
-    position: relative;
-    left: -4px;
-}
-
-.chambres__items>label:last-child{
-    left: 55px;
-}
-
-.chambres__items > :nth-child(2){
-    left: 28px;
-}
-
-.chambres__items > :nth-child(3){
-    left: 43px;
-}
-
-.recherecher__prix{
-    top: 325px;
-}
-
-.recherecher__prix>input{
-    position: absolute;
-    top: 28px;
-}
-
-.recherecher__prix>label{
-    position: relative;
-    left: 3px;
-    cursor: pointer;
-}
-
-
-.recherecher__button{
-    top: 435px;
-}
-.recherecher__button>button{
-    height: 45px;
-    width: 278px;
+.seconnecter{
+    display: none;
 }

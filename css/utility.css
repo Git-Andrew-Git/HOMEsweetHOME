@@ -2,6 +2,9 @@
 .add--pntr{
     cursor: pointer;
 }
+.add--bg-lbr{
+    background-color: #c4a484;
+}
 .add--bg-br{
     background-color: #80461B;
 }
@@ -17,6 +20,9 @@
 .add--bg-w{
     background-color: white;
 }
+.add--col-w{
+    color: white;
+}
 .add--bd-c-br{
     border-color:  #80461B ;
 }
@@ -24,6 +30,13 @@
     border-radius: 8px;
 }
 .add--text-justify { text-align: justify; }
+.add--text-center { text-align: center; }
+.add--el-center{
+    position: relative;
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
 .add--flex{
     display: flex;
 }
@@ -70,8 +83,26 @@
     font-weight: 700;
 }
 .add--mx-20{
-    margin-left: 20; margin-right: 20;
+    margin-left: 20px; margin-right: 20px;
 }
 .add--my-20{
-    margin-top: 20; margin-bottom: 20;
+    margin-top: 20px; margin-bottom: 20px;
+}
+.add--px-20{
+    padding-left: 20px; padding-right: 20px;
+}
+.add--py-20{
+    padding-top: 20px; padding-bottom: 20px;
+}
+.add--mx-px-0{
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+.add--w-100{
+    width: 100%;
+}
+.add--h-100{
+    height: 100%;
 }

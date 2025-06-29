@@ -1,12 +1,18 @@
-@import url(utility.css);
-@import url(footer.css);
-@import url(header.css);
-@import url(global.css);
-
-
-
 /* acceuil */
+.avis{
+    height: 300px;
+    width: 280px;
+    background-color: #C4A484;
+}
 
+.avatar{
+    height: 100px;
+    width: 100px;
+}
+.avatar>svg{
+    height: 100px;
+    width: 100px;
+}
 
 
 

@@ -1,9 +1,53 @@
 /* footer */
-.socials{
-    height: 100;
-    width: 90;
+
+footer{
+    height: 100px;
+    width: 320px;
+    align-items: center;
+    justify-content: space-between;
 }
-.socials__list{
-    top: 10px;
-    left: 100px;
+.socials{
+    width: 90px;
+    top: 0px;
+    /*! black */
+}
+.socials__items{
+    height: 18px;
+    width: 18px;
+    left: 13px;
+}
+.socials__items>svg{
+    height: 18px;
+    width: 18px;
+    background-color: transparent;
+}
+.socials>:nth-child(1){
+    left: 7px;
+}
+.socials>:nth-child(2){
+    left: 13px
+}
+.socials>:nth-child(3){
+    left: 19px;
+}
+.policy{
+    height: 100px;
+    width: 140px;
+}
+.policy__list{
+    height: 0px;
+    width: 140px;
+    top: 15px;
+}
+.policy__list>*:hover{
+    text-decoration: underline;
+}
+.up{
+    width: 90px;
+    left: 25px;
+}
+.up__logo{
+    height: 18px;
+    width: 18px;
+    
 }
