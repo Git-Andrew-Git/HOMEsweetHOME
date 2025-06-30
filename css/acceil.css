@@ -14,5 +14,12 @@
     width: 100px;
 }
 
+.commentcamarche__heading, .commentcamarche__articles>*, .nosservice__heading, .nosservice__imgsec>*, .histoire, .histoire__article>*{
+    margin-bottom: 20px;
+}
+.commentcamarche__articles>img, .nosservice__imgsec>img, .histoire__article>img{
+    justify-content: center;
+}
+
 
 

@@ -245,16 +245,24 @@ position: absolute;
 }
 .sinscrire:target{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sinscrire__wrapper{
   justify-content: center;
-  background-color: aqua;
+  width: 320px;
+  height: 800px;
 }
 .sinscrire__wrapper>*{
   justify-content: center;
-  width: 320px;
-  height: 800px;
+  /* width: 320px; */
+  /* height: 800px; */
 
+}
+.sinscrire__wrapper>.close, .seconnecter__wrapper>.close{
+  position: relative;
+  top: 0;
+  right: 0;
 }
 .seconnecter{
     display: none;
@@ -266,6 +274,9 @@ position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
   justify-content: flex-end;
   align-items: flex-start;
+}
+.seconnecter__wrapper{
+
 }
 .seconnecter:target{
   display: flex;

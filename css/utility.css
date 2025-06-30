@@ -94,6 +94,9 @@
 .add--py-20{
     padding-top: 20px; padding-bottom: 20px;
 }
+.add--mb-20{
+    margin-bottom: 20px;
+}
 .add--mx-px-0{
     margin-left: 0px;
     padding-left: 0px;
