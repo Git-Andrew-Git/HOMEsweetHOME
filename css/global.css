@@ -39,6 +39,8 @@ input[type="text"]:focus {
   box-shadow: 0 0 0 2px #a52a2a;
 }
 button {
+  display: block;
+
   border-radius: 8px;
   border-color: #c4a484 #80461b #80461b #c4a484;
   border-width: 1px;

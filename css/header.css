@@ -234,7 +234,39 @@ position: absolute;
 
 .sinscrire{
     display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.sinscrire:target{
+  display: flex;
+}
+.sinscrire__wrapper{
+  justify-content: center;
+  background-color: aqua;
+}
+.sinscrire__wrapper>*{
+  justify-content: center;
+  width: 320px;
+  height: 800px;
+
 }
 .seconnecter{
     display: none;
+    position: fixed;
+    left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.seconnecter:target{
+  display: flex;
 }

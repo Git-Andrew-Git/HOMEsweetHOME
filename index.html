@@ -349,60 +349,66 @@
                         <li class="menu__item"><a href="index.html">L'accueil</a></li>
                         <li class="menu__item"><a href="locations.html">Les locations</a></li>
                         <li class="menu__item"><a href="services.html">Les services</a></li>
-                        <li class="menu__item"><a href="#">A propos</a></li>
-                        <li class="menu__item"><a href="#">S’inscrire</a></li>
-                        <li class="menu__item"><a href="#">Se connecter</a></li>
+                        <li class="menu__item"><a href="apropos.html">A propos</a></li>
+                        <li class="menu__item"><a href="#sinscrire">S’inscrire</a></li>
+                        <li class="menu__item"><a href="#seconnecter">Se connecter</a></li>
                     </ul>
                 </nav>
             </div>
-            <form class="sinscrire">
-                <h2></h2>
-                <div>
-                    <label for=""></label>
-                    <input type="text">
+            <form id="sinscrire" class="sinscrire">
+                <div class="sinscrire__wrapper">
+                    <h2>S’inscrire</h2>
+                    <div>
+                        <label for="sinscrire__nom">Nom</label>
+                        <input type="text" id="sinscrire__nom" placeholder="Johnson">
+                    </div>
+                    <div>
+                        <label for="sinscrire__prenom">Prenom</label>
+                        <input type="text" id="sinscrire__prenom" placeholder="Bob">
+                    </div>
+                    <div>
+                        <label for="sinscrire__age">Age</label>
+                        <input type="text" id="sinscrire__age" placeholder="18">
+                    </div>
+                    <div>
+                        <label for="sinscrire__email">Email</label>
+                        <input type="text" id="sinscrire__email" placeholder="bah@gmail.com">
+                    </div>
+                    <div>
+                        <label for="sinscrire__mdp1">Mots de passe</label>
+                        <input type="text" id="sinscrire__mdp1" placeholder="azerty123">
+                    </div>
+                    <div>
+                        <label for="sinscrire__mdp2">Mots de passe</label>
+                        <input type="text" id="sinscrire__mdp2" placeholder="azerty123">
+                    </div>
+                    <div>
+                        <label for="">
+                            <input type="checkbox">
+                            Policy
+                        </label>
+                    </div>
+                    <button>S’inscrire</button>
+                    <a href="">Vous avez le compte ? Se connecter</a>
+                    <button class="close">X</button>
                 </div>
-                <div>
-                    <label for=""></label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for=""></label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for=""></label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for=""></label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for=""></label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for=""></label>
-                    <input type="checkbox">
-                </div>
-                <button></button>
-                <a href=""></a>
-                <button></button>
             </form>
 
-            <form class="seconnecter" action="">
-                <h2></h2>
-                <div>
-                    <label for=""></label>
-                    <input type="text">
+            <form id="seconnecter" class="seconnecter" action="">
+                <div class="seconnecter__wrapper">
+                    <h2>Se connecter</h2>
+                    <div>
+                        <label for="seconnecter__email">Email</label>
+                        <input type="text" placeholder="bah@gmail.com" id="seconnecter__email">
+                    </div>
+                    <div>
+                        <label for="seconnecter__mdp">Mots de passe</label>
+                        <input type="text" id="seconnecter__mdp">
+                    </div>
+                    <button>Se connecter</button>
+                    <a href="">Vous avez pas de compte ? S’inscrire</a>
+                    <button class="close">X</button>
                 </div>
-                <div>
-                    <label for=""></label>
-                    <input type="text">
-                </div>
-                <button></button>
-                <a href=""></a>
-                <button></button>
             </form>
 
             <div class="hamburger">
@@ -417,48 +423,51 @@
             </div>
         </div>
         <div class="hero">
-            <div class="hero__img "><img src="images/hero-768.webp" srcset="images/hero-768.webp 768w, images/hero-1080.webp 1080w" sizes="(min-width: 768px) 768px, (min-width: 1200px) 1080px" alt="Appartament"></div>
+            <div class="hero__img "><img src="images/hero-768.webp"
+                    srcset="images/hero-768.webp 768w, images/hero-1080.webp 1080w"
+                    sizes="(min-width: 768px) 768px, (min-width: 1200px) 1080px" alt="Appartament"></div>
             <form class="hero__recherecher">
                 <div class="rechercher__wrapper">
-                <div class="recherecher__localisation add--bg-tr">
-                    <label class="add--bg-tr" for="localisation">Localisation</label>
-                    <input type="text" name="localisation" id="localisation" placeholder="p.ex. Paris, Marseille..">
+                    <div class="recherecher__localisation add--bg-tr">
+                        <label class="add--bg-tr" for="localisation">Localisation</label>
+                        <input type="text" name="localisation" id="localisation" placeholder="p.ex. Paris, Marseille..">
+                    </div>
+                    <div class="recherecher__biens">
+                        <details class="">
+                            <summary>Type de biens</summary>
+                            <div class="biens__items">
+                                <label class="add--pntr"><input type="checkbox" name="biens"
+                                        value="1">Appartament</label>
+                                <label class="add--pntr"><input type="checkbox" name="biens" value="2">Maison</label>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="recherecher__pieces">
+                        <details class="">
+                            <summary># de pièces</summary>
+                            <div class="pieces__items">
+                                <label class="add--pntr"><input type="checkbox" name="pieces" value="1">1</label>
+                                <label class="add--pntr"><input type="checkbox" name="pieces" value="2">2</label>
+                                <label class="add--pntr"><input type="checkbox" name="pieces" value="3">3</label>
+                                <label class="add--pntr"><input type="checkbox" name="pieces" value="4">>4</label>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="recherecher__chambres">
+                        <details class="">
+                            <summary># de chambres</summary>
+                            <div class="chambres__items">
+                                <label class="add--pntr"><input type="checkbox" name="chambres" value="1">1</label>
+                                <label class="add--pntr"><input type="checkbox" name="chambres" value="2">2</label>
+                                <label class="add--pntr"><input type="checkbox" name="chambres" value="3">3</label>
+                                <label class="add--pntr"><input type="checkbox" name="chambres" value="4">>4</label>
+                            </div>
+                        </details>
+                    </div>
+                    <div class="recherecher__prix add--bg-tr"><label class="add--bg-tr" for="prix">Prix max pour le
+                            loyer</label><input type="text" name="prix" id="prix" placeholder="p.ex. 500"></div>
+                    <div class="recherecher__button"><button type="submit">Recherecher</button></div>
                 </div>
-                <div class="recherecher__biens">
-                    <details class="">
-                        <summary>Type de biens</summary>
-                        <div class="biens__items">
-                            <label class="add--pntr"><input type="checkbox" name="biens" value="1">Appartament</label>
-                            <label class="add--pntr"><input type="checkbox" name="biens" value="2">Maison</label>
-                        </div>
-                    </details>
-                </div>
-                <div class="recherecher__pieces">
-                    <details class="">
-                        <summary># de pièces</summary>
-                        <div class="pieces__items">
-                            <label class="add--pntr"><input type="checkbox" name="pieces" value="1">1</label>
-                            <label class="add--pntr"><input type="checkbox" name="pieces" value="2">2</label>
-                            <label class="add--pntr"><input type="checkbox" name="pieces" value="3">3</label>
-                            <label class="add--pntr"><input type="checkbox" name="pieces" value="4">>4</label>
-                        </div>
-                    </details>
-                </div>
-                <div class="recherecher__chambres">
-                    <details class="">
-                        <summary># de chambres</summary>
-                        <div class="chambres__items">
-                            <label class="add--pntr"><input type="checkbox" name="chambres" value="1">1</label>
-                            <label class="add--pntr"><input type="checkbox" name="chambres" value="2">2</label>
-                            <label class="add--pntr"><input type="checkbox" name="chambres" value="3">3</label>
-                            <label class="add--pntr"><input type="checkbox" name="chambres" value="4">>4</label>
-                        </div>
-                    </details>
-                </div>
-                <div class="recherecher__prix add--bg-tr"><label class="add--bg-tr" for="prix">Prix max pour le loyer</label><input type="text"
-                        name="prix" id="prix" placeholder="p.ex. 500"></div>
-                <div class="recherecher__button"><button type="submit">Recherecher</button></div>
-            </div>
             </form>
         </div>
     </header>
@@ -469,7 +478,8 @@
             <h2 class="add--text-center">Comment ça marche ? La location en 4 étapes</h2>
             <article class="add--w-100">
                 <h3 class="add--text-center">😍 Trouver un bien</h3>
-                <p class="add--text-justify add--txt-s-10">It is a long established fact that a reader will be distracted by the readable content of a page when
+                <p class="add--text-justify add--txt-s-10">It is a long established fact that a reader will be
+                    distracted by the readable content of a page when
                     looking at its
                     layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
                     as opposed to using
@@ -483,7 +493,8 @@
             </article>
             <article>
                 <h3 class="add--text-center">📋Constituer son dossier</h3>
-                <p class="add--text-justify add--txt-s-10">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                <p class="add--text-justify add--txt-s-10">There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered
                     alteration in some form,
                     by injected humour, or randomised words which don't look even slightly believable. If you are going
                     to use a passage of
@@ -499,7 +510,8 @@
             </article>
             <article>
                 <h3 class="add--text-center">📑🖋️ Signer son contrat</h3>
-                <p class="add--text-justify add--txt-s-10">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                <p class="add--text-justify add--txt-s-10">Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of
                     classical Latin literature
                     from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
                     College in Virginia,
@@ -515,7 +527,8 @@
             </article>
             <article>
                 <h3 class="add--text-center">🗓️🏠 Entrer dans les lieux</h3>
-                <p class="add--text-justify add--txt-s-10">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                <p class="add--text-justify add--txt-s-10">The standard chunk of Lorem Ipsum used since the 1500s is
+                    reproduced below for those interested.
                     Sections 1.10.32 and
                     1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original
                     form, accompanied by
@@ -556,7 +569,8 @@
             <h2 class="add--text-center">Qui sommes-nous ? Notre histoire</h2>
             <article>
                 <div><img src="https://picsum.photos/320/150" alt=""></div>
-                <p class="add--text-justify add--txt-s-10 add--px-20">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                <p class="add--text-justify add--txt-s-10 add--px-20">Contrary to popular belief, Lorem Ipsum is not
+                    simply random text. It has roots in a piece of
                     classical Latin literature
                     from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
                     College in Virginia,
@@ -571,25 +585,31 @@
                     amet..", comes from a line in section 1.10.32.</p>
             </article>
         </section>
-        <section >
+        <section>
             <h2 class="add--text-center">Votre avis compte – Ils nous ont fait confiance</h2>
             <article class="add--w-100 add--pr">
                 <div class="avis add--mx-20 add--my-20 add--bd-r-8 add--text-center add--el-center">
                     <div>
-                        <div class="avatar add--bg-lbr add--text-center"><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                        <svg class="add--bg-lbr add--text-center" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <title>ionicons-v5-j</title>
-                            <path
-                                d="M256,48C141.31,48,48,141.31,48,256s93.31,208,208,208,208-93.31,208-208S370.69,48,256,48ZM205.78,164.82C218.45,151.39,236.28,144,256,144s37.39,7.44,50.11,20.94C319,178.62,325.27,197,323.79,216.76,320.83,256,290.43,288,256,288s-64.89-32-67.79-71.25C186.74,196.83,193,178.39,205.78,164.82ZM256,432a175.49,175.49,0,0,1-126-53.22,122.91,122.91,0,0,1,35.14-33.44C190.63,329,222.89,320,256,320s65.37,9,90.83,25.34A122.87,122.87,0,0,1,382,378.78,175.45,175.45,0,0,1,256,432Z"/></svg></div>
+                        <div class="avatar add--bg-lbr add--text-center">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg class="add--bg-lbr add--text-center" fill="#000000" width="800px" height="800px"
+                                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <title>ionicons-v5-j</title>
+                                <path
+                                    d="M256,48C141.31,48,48,141.31,48,256s93.31,208,208,208,208-93.31,208-208S370.69,48,256,48ZM205.78,164.82C218.45,151.39,236.28,144,256,144s37.39,7.44,50.11,20.94C319,178.62,325.27,197,323.79,216.76,320.83,256,290.43,288,256,288s-64.89-32-67.79-71.25C186.74,196.83,193,178.39,205.78,164.82ZM256,432a175.49,175.49,0,0,1-126-53.22,122.91,122.91,0,0,1,35.14-33.44C190.63,329,222.89,320,256,320s65.37,9,90.83,25.34A122.87,122.87,0,0,1,382,378.78,175.45,175.45,0,0,1,256,432Z" />
+                            </svg>
+                        </div>
                         <h3 class="add--text-center add--bg-lbr">Bob</h3>
-                        <div class="add--bg-lbr add--text-center"><img src="https://picsum.photos/22/22" alt="">
+                        <div class="add--bg-lbr add--text-center">
+                            <img src="https://picsum.photos/22/22" alt="">
                             <img class="add--bg-lbr" src="https://picsum.photos/22/22" alt="">
                             <img class="add--bg-lbr" src="https://picsum.photos/22/22" alt="">
                             <img class="add--bg-lbr" src="https://picsum.photos/22/22" alt="">
                             <img class="add--bg-lbr" src="https://picsum.photos/22/22" alt="">
                         </div>
                         <div class="add--bg-lbr">
-                            <p class="add--text-justify add--txt-s-10 add--bg-lbr">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                            <p class="add--text-justify add--txt-s-10 add--bg-lbr">The standard chunk of Lorem Ipsum
+                                used since the 1500s is reproduced below for those
                                 interested. Sections 1.10.32 and
                                 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their
                                 exact original form, accompanied by
@@ -599,11 +619,15 @@
                 </div>
                 <div class="avis add--mx-20 add--my-20 add--bd-r-8 add--el-center">
                     <div class="add--bg-lbr">
-                        <div class="avatar add--bg-lbr add--text-center add--w-100"><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                        <svg class="add--bg-lbr add--text-center" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <title>ionicons-v5-j</title>
-                            <path
-                                d="M256,48C141.31,48,48,141.31,48,256s93.31,208,208,208,208-93.31,208-208S370.69,48,256,48ZM205.78,164.82C218.45,151.39,236.28,144,256,144s37.39,7.44,50.11,20.94C319,178.62,325.27,197,323.79,216.76,320.83,256,290.43,288,256,288s-64.89-32-67.79-71.25C186.74,196.83,193,178.39,205.78,164.82ZM256,432a175.49,175.49,0,0,1-126-53.22,122.91,122.91,0,0,1,35.14-33.44C190.63,329,222.89,320,256,320s65.37,9,90.83,25.34A122.87,122.87,0,0,1,382,378.78,175.45,175.45,0,0,1,256,432Z"/></svg></div>
+                        <div class="avatar add--bg-lbr add--text-center add--w-100">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg class=" add--bg-lbr add--text-center" fill="#000000" width="800px" height="800px"
+                                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <title>ionicons-v5-j</title>
+                                <path
+                                    d="M256,48C141.31,48,48,141.31,48,256s93.31,208,208,208,208-93.31,208-208S370.69,48,256,48ZM205.78,164.82C218.45,151.39,236.28,144,256,144s37.39,7.44,50.11,20.94C319,178.62,325.27,197,323.79,216.76,320.83,256,290.43,288,256,288s-64.89-32-67.79-71.25C186.74,196.83,193,178.39,205.78,164.82ZM256,432a175.49,175.49,0,0,1-126-53.22,122.91,122.91,0,0,1,35.14-33.44C190.63,329,222.89,320,256,320s65.37,9,90.83,25.34A122.87,122.87,0,0,1,382,378.78,175.45,175.45,0,0,1,256,432Z" />
+                            </svg>
+                        </div>
                         <h3 class="add--text-center add--bg-lbr">Bob</h3>
                         <div class="add--bg-lbr add--text-center"><img src="https://picsum.photos/22/22" alt="">
                             <img src="https://picsum.photos/22/22" alt="">
@@ -612,7 +636,8 @@
                             <img src="https://picsum.photos/22/22" alt="">
                         </div>
                         <div>
-                            <p class="add--text-justify add--txt-s-10 add--bg-lbr">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                            <p class="add--text-justify add--txt-s-10 add--bg-lbr">The standard chunk of Lorem Ipsum
+                                used since the 1500s is reproduced below for those
                                 interested. Sections 1.10.32 and
                                 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their
                                 exact original form, accompanied by
@@ -622,11 +647,15 @@
                 </div>
                 <div class="avis add--bg-lbr add--mx-20 add--my-20 add--bd-r-8 add--el-center">
                     <div>
-                        <div class="avatar add--bg-lbr add--text-center"><?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                        <svg class="add--bg-lbr add--text-center" fill="#000000" width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <title>ionicons-v5-j</title>
-                            <path
-                                d="M256,48C141.31,48,48,141.31,48,256s93.31,208,208,208,208-93.31,208-208S370.69,48,256,48ZM205.78,164.82C218.45,151.39,236.28,144,256,144s37.39,7.44,50.11,20.94C319,178.62,325.27,197,323.79,216.76,320.83,256,290.43,288,256,288s-64.89-32-67.79-71.25C186.74,196.83,193,178.39,205.78,164.82ZM256,432a175.49,175.49,0,0,1-126-53.22,122.91,122.91,0,0,1,35.14-33.44C190.63,329,222.89,320,256,320s65.37,9,90.83,25.34A122.87,122.87,0,0,1,382,378.78,175.45,175.45,0,0,1,256,432Z"/></svg></div>
+                        <div class="avatar add--bg-lbr add--text-center">
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg class="add--bg-lbr add--text-center" fill="#000000" width="800px" height="800px"
+                                viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <title>ionicons-v5-j</title>
+                                <path
+                                    d="M256,48C141.31,48,48,141.31,48,256s93.31,208,208,208,208-93.31,208-208S370.69,48,256,48ZM205.78,164.82C218.45,151.39,236.28,144,256,144s37.39,7.44,50.11,20.94C319,178.62,325.27,197,323.79,216.76,320.83,256,290.43,288,256,288s-64.89-32-67.79-71.25C186.74,196.83,193,178.39,205.78,164.82ZM256,432a175.49,175.49,0,0,1-126-53.22,122.91,122.91,0,0,1,35.14-33.44C190.63,329,222.89,320,256,320s65.37,9,90.83,25.34A122.87,122.87,0,0,1,382,378.78,175.45,175.45,0,0,1,256,432Z" />
+                            </svg>
+                        </div>
                         <h3 class="add--text-center add--bg-lbr">Bob</h3>
                         <div class="add--bg-lbr add--text-center"><img src="https://picsum.photos/22/22" alt="">
                             <img src="https://picsum.photos/22/22" alt="">
@@ -635,7 +664,8 @@
                             <img src="https://picsum.photos/22/22" alt="">
                         </div>
                         <div>
-                            <p class="add--text-justify add--txt-s-10 add--bg-lbr">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those
+                            <p class="add--text-justify add--txt-s-10 add--bg-lbr">The standard chunk of Lorem Ipsum
+                                used since the 1500s is reproduced below for those
                                 interested. Sections
                                 1.10.32 and
                                 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their
