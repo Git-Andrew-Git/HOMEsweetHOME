@@ -29,6 +29,7 @@
 .add--bd-r-8{
     border-radius: 8px;
 }
+.add--text-left { text-align: left; }
 .add--text-justify { text-align: justify; }
 .add--text-center { text-align: center; }
 .add--el-center{
@@ -75,6 +76,9 @@
 }
 .add--txt-no-style{
     text-transform: none;
+}
+.add--txt-decor-0{
+    text-decoration: none;
 }
 .add--font-normal{
     font-weight: 400;

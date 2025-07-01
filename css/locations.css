@@ -1,0 +1,9 @@
+.avis__block--changed{
+    width: 300px !important;
+    height: 360px !important;
+}
+.avis__block>a{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}

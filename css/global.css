@@ -38,6 +38,16 @@ input[type="text"]:focus {
   outline: none;
   box-shadow: 0 0 0 2px #a52a2a;
 }
+input[type="text"]:hover {
+  outline: none;
+  box-shadow: 0 0 0 2px #a52a2a;
+}
+label:hover {
+  outline: none;
+  /* box-shadow: 0 0 0 2px #a52a2a; */
+  text-shadow: 0 0 3px rgba(255, 155, 105, 0.522);
+  
+}
 button {
   display: block;
 
@@ -60,9 +70,15 @@ button:active {
 a {
   color: inherit;
 }
-a:hover {
-  color: #c4a484;
-}
 a:visited {
   color: #daa06d;
+}
+a:hover {
+  color:#CC7722;
+}
+p{
+  font-size: 0.875rem !important;
+}
+div>:has(>.star):hover{
+  box-shadow: 2px 2px 8px 2px #F8D64E;
 }

@@ -51,3 +51,42 @@ footer{
     width: 18px;
     
 }
+.policy{
+    /* display: flex; */
+    /* align-content: center; */
+    /* justify-content: center; */
+}
+.policy__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+  .policy__list>*{
+    justify-content: center;
+    margin-bottom: 10px;
+    /* display: block; */
+  }
+  @media (min-width: 768px){
+    .socials__items{
+        margin-right: 15px;
+    }
+    .socials{
+        width: 130px;
+    }
+    .up{
+        width: 130px;
+        left: 45px;
+    }
+    .up__logo{
+        height: 25px;
+        width: 25px;
+        
+    }
+    .socials__items>svg{
+        height: 25px;
+        width: 25px;
+        background-color: transparent;
+    }
+  }

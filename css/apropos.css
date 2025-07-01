@@ -1,0 +1,10 @@
+/* apropos */
+.histoire__article>div{
+    text-align: center;
+}
+.histoire{
+    margin-bottom: 30px;
+}
+.histoire, .histoire__article>*{
+    margin-bottom: 20px;
+}

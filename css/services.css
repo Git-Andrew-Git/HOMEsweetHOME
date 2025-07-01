@@ -1,5 +1,5 @@
 .accordion {
-    max-width: 600px;
+    max-width: 100%;
     margin: auto;
     background: white;
     border-radius: 8px;
@@ -9,18 +9,20 @@
 
   .accordion-item {
     border-bottom: 1px solid #ddd;
+    text-decoration: none;
   }
 
   .accordion-header {
-    background: #007BFF;
+    /* background: #ff800049; */
     color: white;
     padding: 1rem;
     cursor: pointer;
     position: relative;
+    text-decoration: none;
   }
 
   .accordion-header::after {
-    content: '+';
+    /* content: '+'; */
     position: absolute;
     right: 1rem;
     font-size: 1.2rem;
@@ -43,5 +45,5 @@
 
   /* Change icon when open */
   .accordion-item:target .accordion-header::after {
-    content: '-';
+    /* content: '-'; */
   }
