@@ -5,6 +5,9 @@
   background-color: #ffffff;
   box-sizing: border-box;
 }
+body{
+  width: 100vw;
+}
 body::before {
   content: "";
   display: block;
@@ -82,3 +85,4 @@ p{
 div>:has(>.star):hover{
   box-shadow: 2px 2px 8px 2px #F8D64E;
 }
+

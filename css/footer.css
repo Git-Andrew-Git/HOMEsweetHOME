@@ -90,3 +90,21 @@ footer{
         background-color: transparent;
     }
   }
+
+  @media (min-width: 1200px){
+    .policy__list{
+        height: 0px;
+        width: 300px;
+        top: 50px;
+        left: -85px;
+        /* transform: translate(0%, -50%); */
+    }
+
+    .policy__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+      }
+    }

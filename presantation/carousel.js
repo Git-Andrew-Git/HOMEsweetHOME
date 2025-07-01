@@ -1,6 +1,6 @@
 let currentIndex = 0;
-const slides = document.getElementById("slides");
-const totalSlides = slides.children.length;
+const slides = document.querySelector(".slides"); // Use querySelector for single element
+const totalSlides = slides.children.length; // Get number of slides
 const dots = document.querySelectorAll(".dot");
 
 function updateCarousel() {
@@ -27,3 +27,8 @@ function jumpTo(index) {
   currentIndex = index;
   updateCarousel();
 }
+
+// Initialize the carousel on page load
+document.addEventListener("DOMContentLoaded", () => {
+  updateCarousel();
+});
